@@ -76,6 +76,12 @@
     <None Include="app.config" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Legacy.Common\Legacy.Common.csproj">
+      <Project>{8213A43B-6EB6-4B15-9687-B079ADE0DE1A}</Project>
+      <Name>Legacy.Common</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
