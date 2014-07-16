@@ -1,23 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ServiceConfiguration serviceName="TR19.Demos.Cloud" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceConfiguration" osFamily="4" osVersion="*" schemaVersion="2014-01.2.3">
-  <Role name="Legacy.API">
-    <Instances count="1" />
-    <ConfigurationSettings>
-      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="UseDevelopmentStorage=true" />
-      <Setting name="StorageConnectionString" value="DefaultEndpointsProtocol=https;AccountName=tr19azr323;AccountKey=Fmn1rCGd9VkFHe7hW+6if3mIxydxwIYcapMcUZhpCunnxdslQ5uE7pclGLVJn5VjDADPigjIDXajuaKbwyXHhw==" />
-    </ConfigurationSettings>
-  </Role>
   <Role name="Legacy.SearchWorker">
     <Instances count="1" />
     <ConfigurationSettings>
-      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="UseDevelopmentStorage=true" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="DefaultEndpointsProtocol=https;AccountName=tr19azr323;AccountKey=Fmn1rCGd9VkFHe7hW+6if3mIxydxwIYcapMcUZhpCunnxdslQ5uE7pclGLVJn5VjDADPigjIDXajuaKbwyXHhw==" />
       <Setting name="StorageConnectionString" value="DefaultEndpointsProtocol=https;AccountName=tr19azr323;AccountKey=Fmn1rCGd9VkFHe7hW+6if3mIxydxwIYcapMcUZhpCunnxdslQ5uE7pclGLVJn5VjDADPigjIDXajuaKbwyXHhw==" />
     </ConfigurationSettings>
   </Role>
   <Role name="Legacy.EmailWorker">
     <Instances count="1" />
     <ConfigurationSettings>
-      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="UseDevelopmentStorage=true" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="DefaultEndpointsProtocol=https;AccountName=tr19azr323;AccountKey=Fmn1rCGd9VkFHe7hW+6if3mIxydxwIYcapMcUZhpCunnxdslQ5uE7pclGLVJn5VjDADPigjIDXajuaKbwyXHhw==" />
       <Setting name="StorageConnectionString" value="DefaultEndpointsProtocol=https;AccountName=tr19azr323;AccountKey=Fmn1rCGd9VkFHe7hW+6if3mIxydxwIYcapMcUZhpCunnxdslQ5uE7pclGLVJn5VjDADPigjIDXajuaKbwyXHhw==" />
     </ConfigurationSettings>
   </Role>

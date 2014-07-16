@@ -17,10 +17,8 @@ namespace TwitterSearch.Web.Controllers
   {
     [HttpPost]
     [Route("search")]
-    public void HandleNotification(HttpRequestMessage request)
+    public void HandleNotification([FromBody] SearchRequest request)
     {
-      SearchRequest payload = request.Content.ReadAsAsync<SearchRequest>().Result;
-
       var connString = ConfigurationManager.ConnectionStrings["StorageConnectionString"].ConnectionString;
       var storageAccount = CloudStorageAccount.Parse(connString);
 
@@ -28,7 +26,7 @@ namespace TwitterSearch.Web.Controllers
       var queue = queueClient.GetQueueReference("search-queue");
       queue.CreateIfNotExists();
 
-      var serialized = JsonConvert.SerializeObject(payload);
+      var serialized = JsonConvert.SerializeObject(request);
       var message = new CloudQueueMessage(serialized);
       queue.AddMessage(message);
     }

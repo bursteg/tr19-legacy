@@ -37,14 +37,6 @@
     <ServiceConfiguration Include="ServiceConfiguration.Cloud.cscfg" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Legacy.API\Legacy.API.csproj">
-      <Name>Legacy.API</Name>
-      <Project>{9ebb836c-a043-41fa-98b4-d37b62ca7ab3}</Project>
-      <Private>True</Private>
-      <RoleType>Web</RoleType>
-      <RoleName>Legacy.API</RoleName>
-      <UpdateDiagnosticsConnectionStringOnPublish>True</UpdateDiagnosticsConnectionStringOnPublish>
-    </ProjectReference>
     <ProjectReference Include="..\Legacy.EmailWorker\Legacy.EmailWorker.csproj">
       <Name>Legacy.EmailWorker</Name>
       <Project>{1a7ef3cd-9f87-425b-aaf7-0ba325548489}</Project>
@@ -66,6 +58,7 @@
     <Folder Include="Legacy.APIContent\" />
     <Folder Include="Legacy.EmailWorkerContent\" />
     <Folder Include="Legacy.SearchWorkerContent\" />
+    <Folder Include="Profiles" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Legacy.APIContent\diagnostics.wadcfg">
@@ -77,6 +70,9 @@
     <Content Include="Legacy.SearchWorkerContent\diagnostics.wadcfg">
       <SubType>Content</SubType>
     </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <PublishProfile Include="Profiles\twittersearchProduction.azurePubxml" />
   </ItemGroup>
   <!-- Import the target files for this project template -->
   <PropertyGroup>
