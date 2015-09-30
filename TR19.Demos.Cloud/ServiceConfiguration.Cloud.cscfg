@@ -3,14 +3,14 @@
   <Role name="Legacy.SearchWorker">
     <Instances count="1" />
     <ConfigurationSettings>
-      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="DefaultEndpointsProtocol=https;AccountName=tr19azr323;AccountKey=Fmn1rCGd9VkFHe7hW+6if3mIxydxwIYcapMcUZhpCunnxdslQ5uE7pclGLVJn5VjDADPigjIDXajuaKbwyXHhw==" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="" />
       <Setting name="StorageConnectionString" value="" />
     </ConfigurationSettings>
   </Role>
   <Role name="Legacy.EmailWorker">
     <Instances count="1" />
     <ConfigurationSettings>
-      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="DefaultEndpointsProtocol=https;AccountName=tr19azr323;AccountKey=Fmn1rCGd9VkFHe7hW+6if3mIxydxwIYcapMcUZhpCunnxdslQ5uE7pclGLVJn5VjDADPigjIDXajuaKbwyXHhw==" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="" />
       <Setting name="StorageConnectionString" value="" />
     </ConfigurationSettings>
   </Role>
